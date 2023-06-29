@@ -1,8 +1,30 @@
 class FizzBuzz{
     retornar_fizz_buzz(numero){
-        if (numero %3 == 0)
-        return "Fizz";
+   
+     for (let i=1;i<=numero;i++ ){  
+       if ((i %3 == 0)&&(i %5 == 0)){
+            console.log("FizzBuzz");
+           
+           
+        }else if(i %3 == 0){
+            console.log("Fizz");
+           
+        }else if (i %5 == 0){
+            console.log("Buzz");
+           
+        }else{
+            console.log(i);
+          
+        }
+   
     }
-}
+    }//end function
+
+}//end classs
+
 
 module.exports= FizzBuzz;
+
+
+obj = new FizzBuzz;
+obj.retornar_fizz_buzz(15);
